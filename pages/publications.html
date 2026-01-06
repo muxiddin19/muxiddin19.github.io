@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publications by Dr. Mukhiddin Toshpulatov - Journal Papers, Conference Papers, and Invited Talks">
+    <title>Publications | Dr. Mukhiddin Toshpulatov</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .pub-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .pub-filter button {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid var(--border-color);
+            background: var(--bg-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        .pub-filter button:hover,
+        .pub-filter button.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+        }
+        .pub-section {
+            margin-bottom: 3rem;
+        }
+        .pub-section h3 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Dr. <span>Muhiddin</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 3rem 0;">
+        <div class="container text-center">
+            <h1 style="color: white;">Publications</h1>
+            <p style="opacity: 0.9;">Journal Papers, Conference Papers, and Invited Talks</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="pub-filter">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="journal">Journal Papers</button>
+                <button data-filter="conference">Conference Papers</button>
+                <button data-filter="talks">Invited Talks</button>
+            </div>
+
+            <!-- Journal Papers -->
+            <div class="pub-section" data-category="journal">
+                <h3><i class="fas fa-book"></i> Journal Papers (SCIE)</h3>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <span class="publication-year">2025</span>
+                        <h4 class="publication-title">Hyperspectral Anomaly Detection with Enhanced Spectral Graph Transformer Network</h4>
+                        <p class="publication-authors">Safarov F., Toshpulatov, M., et al</p>
+                        <p class="publication-venue">IEEE Access <span class="publication-badge">IF: 4.82</span></p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2025</span>
+                        <h4 class="publication-title">Deep learning pathways for automatic sign language processing</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">Pattern Recognition, 164, 111475 <span class="publication-badge">SCIE, IF: 9.84</span></p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2024</span>
+                        <h4 class="publication-title">DDC3N: Doppler-driven convolutional 3D network for human action recognition</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S. et al</p>
+                        <p class="publication-venue">IEEE Access, 10.1109/ACCESS.2024.3422428 <span class="publication-badge">SCIE, IF: 4.82</span></p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2023</span>
+                        <h4 class="publication-title">Talking human face generation: survey</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">Expert Systems with Applications, 219, 119678 <span class="publication-badge">SCIE, IF: 9.29</span></p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2022</span>
+                        <h4 class="publication-title">Human pose, hand, and mesh estimation using deep learning: survey</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">The Journal of Supercomputing, 78(6), 7616-7654 <span class="publication-badge">SCIE, IF: 3.96</span></p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2021</span>
+                        <h4 class="publication-title">Generative adversarial networks and their application to 3D face generation: a survey</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">Image and Vision Computing, 104-119 <span class="publication-badge">SCIE, IF: 4.3</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Papers -->
+            <div class="pub-section" data-category="conference">
+                <h3><i class="fas fa-users"></i> Conference Papers</h3>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <span class="publication-year">2024</span>
+                        <span class="publication-badge" style="background: gold; color: #333;">Best Paper Award</span>
+                        <h4 class="publication-title">The language of silence: a deep dive into interpretable sign language recognition</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">Proceedings Korean Software Congress 2024, 185-187</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2024</span>
+                        <span class="publication-badge" style="background: gold; color: #333;">Best Paper Award</span>
+                        <h4 class="publication-title">A Novel Scholarly Approach to Action Recognition: A CNN Architecture Enhanced with Innovative Preprocessing Techniques</h4>
+                        <p class="publication-authors">Toshpulatov, M., & Lee, W.</p>
+                        <p class="publication-venue">Proceedings Big Data Applications and Services (BIGDAS2024)</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2024</span>
+                        <h4 class="publication-title">Human action recognition utilizing Doppler-enhanced convolutional 3D networks</h4>
+                        <p class="publication-authors">Toshpulatov, M., & Lee, W.</p>
+                        <p class="publication-venue">Proceedings of the International Conference on Big Data and Smart Computing (BigComp)</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2024</span>
+                        <h4 class="publication-title">Streamlining Computational Complexity: A Novel Data Processing Approach for Enhanced 3DCNN Performance in Human Action Recognition</h4>
+                        <p class="publication-authors">Toshpulatov, M., & Lee, W.</p>
+                        <p class="publication-venue">Proceedings Korean Computer Congress 2024, 107-109</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2023</span>
+                        <h4 class="publication-title">Athletes' action recognition through skeleton-based human pose estimation and 3D convolutional networks</h4>
+                        <p class="publication-authors">Toshpulatov, M., & Lee, W.</p>
+                        <p class="publication-venue">Proceedings System Engineering Conference, 57-59</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2022</span>
+                        <h4 class="publication-title">Privacy-preserving of human identification in CCTV data using a novel deep learning-based method</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">Proceedings International Conference on Big Data and Smart Computing (BigComp)</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2020</span>
+                        <h4 class="publication-title">Research Issues on Generative Adversarial Networks and Applications</h4>
+                        <p class="publication-authors">Toshpulatov, M., Lee, W., & Lee, S.</p>
+                        <p class="publication-venue">Proceedings International Conference on Big Data and Smart Computing (BigComp)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invited Talks -->
+            <div class="pub-section" data-category="talks">
+                <h3><i class="fas fa-microphone"></i> Invited Talks</h3>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <span class="publication-year">2025</span>
+                        <h4 class="publication-title">"Recent advancement in DL-based Sign Language Processing"</h4>
+                        <p class="publication-venue">AI & Big Data Workshop, Inha University, 26 September 2025, Incheon, South Korea</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2025</span>
+                        <h4 class="publication-title">"Recent advancement in AI embedded HCI"</h4>
+                        <p class="publication-venue">Tashkent Institute of Management and Economics, 17-18 April 2025, Tashkent, Uzbekistan</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2025</span>
+                        <h4 class="publication-title">"Transformer based novel sign language recognition approaches"</h4>
+                        <p class="publication-venue">Djizakh Polytechnical Institute, 21-22 February 2025, Djizakh, Uzbekistan</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2024</span>
+                        <h4 class="publication-title">"Multimodal action recognition methods"</h4>
+                        <p class="publication-venue">Djizakh Polytechnical Institute, 11-12 March 2024, Djizakh, Uzbekistan</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <span class="publication-year">2022</span>
+                        <h4 class="publication-title">"AI in education systems"</h4>
+                        <p class="publication-venue">Sambhram University, 26-27 July 2022, Djizakh, Uzbekistan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Mukhiddin Toshpulatov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Publication filter functionality
+        document.querySelectorAll('.pub-filter button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.pub-filter button').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.pub-section').forEach(section => {
+                    if (filter === 'all' || section.dataset.category === filter) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

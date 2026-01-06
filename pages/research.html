@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research by Dr. Mukhiddin Toshpulatov - Sign Language Recognition, Human Activity Recognition, Generative AI">
+    <title>Research | Dr. Mukhiddin Toshpulatov</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .research-detail {
+            background: var(--bg-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--accent-color);
+        }
+        .research-detail h3 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .research-detail .icon {
+            width: 50px;
+            height: 50px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .research-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .topic-tag {
+            background: var(--bg-tertiary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            color: var(--text-color);
+        }
+        .current-projects {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .current-projects h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Dr. <span>Muhiddin</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 3rem 0;">
+        <div class="container text-center">
+            <h1 style="color: white;">Research</h1>
+            <p style="opacity: 0.9;">Bridging AI advances with transformative real-world applications</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Research Overview</h2>
+            </div>
+            <div class="card" style="max-width: 900px; margin: 0 auto 3rem;">
+                <p>My research focuses on developing innovative AI-driven solutions that enhance human-computer interaction and accessibility. I specialize in multimodal learning systems that combine computer vision, natural language processing, and deep learning to create more intuitive and inclusive technologies.</p>
+                <p>Current work emphasizes real-time sign language recognition, privacy-preserving surveillance systems, and generative AI for human interaction modeling.</p>
+            </div>
+
+            <!-- Research Area 1 -->
+            <div class="research-detail">
+                <h3>
+                    <span class="icon"><i class="fas fa-hands"></i></span>
+                    Multimodal Sign Language Technologies
+                </h3>
+                <p>Developing advanced systems for automatic sign language recognition and translation. This research combines multiple input modalities including RGB video, skeletal keypoints, and depth information to achieve robust sign language understanding.</p>
+                <div class="research-topics">
+                    <span class="topic-tag">Real-time Translation</span>
+                    <span class="topic-tag">Cross-linguistic Corpora</span>
+                    <span class="topic-tag">Wearable Sensors</span>
+                    <span class="topic-tag">Keypoint Vectorization</span>
+                    <span class="topic-tag">Vision Transformers</span>
+                    <span class="topic-tag">Multimodal Fusion</span>
+                </div>
+                <div class="current-projects">
+                    <h4><i class="fas fa-flask"></i> Key Contributions</h4>
+                    <ul>
+                        <li>PhD Thesis: "Advancing Sign Language Recognition: A Multimodal Deep Learning Framework with Keypoint Vectorization"</li>
+                        <li>Deep learning pathways for automatic sign language processing (Pattern Recognition, IF: 9.84)</li>
+                        <li>Interpretable sign language recognition systems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Area 2 -->
+            <div class="research-detail">
+                <h3>
+                    <span class="icon"><i class="fas fa-running"></i></span>
+                    Advanced Human Activity Recognition
+                </h3>
+                <p>Researching novel approaches to recognize and classify human activities using various sensing modalities. Special focus on Doppler radar-based recognition for privacy-preserving applications and skeleton-based pose estimation for sports analytics.</p>
+                <div class="research-topics">
+                    <span class="topic-tag">Doppler Radar Analysis</span>
+                    <span class="topic-tag">Privacy-preserving Surveillance</span>
+                    <span class="topic-tag">Healthcare Monitoring</span>
+                    <span class="topic-tag">3D CNN</span>
+                    <span class="topic-tag">Skeleton-based Recognition</span>
+                    <span class="topic-tag">Sports Analytics</span>
+                </div>
+                <div class="current-projects">
+                    <h4><i class="fas fa-flask"></i> Key Contributions</h4>
+                    <ul>
+                        <li>DDC3N: Doppler-driven convolutional 3D network for human action recognition (IEEE Access)</li>
+                        <li>Privacy-preserving human identification in CCTV data</li>
+                        <li>Athletes' action recognition through skeleton-based pose estimation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Area 3 -->
+            <div class="research-detail">
+                <h3>
+                    <span class="icon"><i class="fas fa-robot"></i></span>
+                    Generative AI for Human Interaction
+                </h3>
+                <p>Exploring generative models for realistic human face and body synthesis. Research includes talking face generation, speech-to-face synthesis, and 3D facial animation for virtual avatars and accessibility applications.</p>
+                <div class="research-topics">
+                    <span class="topic-tag">3D Facial Animation</span>
+                    <span class="topic-tag">Speech-to-Face Synthesis</span>
+                    <span class="topic-tag">GANs</span>
+                    <span class="topic-tag">Diffusion Models</span>
+                    <span class="topic-tag">Talking Head Generation</span>
+                    <span class="topic-tag">Virtual Avatars</span>
+                </div>
+                <div class="current-projects">
+                    <h4><i class="fas fa-flask"></i> Key Contributions</h4>
+                    <ul>
+                        <li>Talking human face generation: survey (Expert Systems with Applications, IF: 9.29)</li>
+                        <li>Generative adversarial networks and their application to 3D face generation: a survey (Image and Vision Computing)</li>
+                        <li>Research on diffusion models and LLMs for sign language synthesis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Area 4 -->
+            <div class="research-detail">
+                <h3>
+                    <span class="icon"><i class="fas fa-hand-pointer"></i></span>
+                    AI-driven Human-Computer Interaction
+                </h3>
+                <p>Developing natural and intuitive interfaces for human-computer interaction. Research includes hand and finger detection for virtual input devices, AR/VR interfaces, and accessibility tools.</p>
+                <div class="research-topics">
+                    <span class="topic-tag">Hand Detection</span>
+                    <span class="topic-tag">Finger Tracking</span>
+                    <span class="topic-tag">Virtual Keyboards</span>
+                    <span class="topic-tag">AR/VR/XR</span>
+                    <span class="topic-tag">Smart Glasses</span>
+                    <span class="topic-tag">Gesture Recognition</span>
+                </div>
+                <div class="current-projects">
+                    <h4><i class="fas fa-flask"></i> Key Contributions</h4>
+                    <ul>
+                        <li>Human pose, hand, and mesh estimation using deep learning: survey (Journal of Supercomputing, IF: 3.96)</li>
+                        <li>VR keyboard project at KAIST SpaceTop Research Center (ITRC)</li>
+                        <li>Research on natural interaction paradigms for accessibility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Area 5 -->
+            <div class="research-detail">
+                <h3>
+                    <span class="icon"><i class="fas fa-heartbeat"></i></span>
+                    Medical AI & Smart Healthcare
+                </h3>
+                <p>Applying AI and deep learning techniques to medical imaging and healthcare applications. Focus on improving diagnostic accuracy and enabling smart healthcare monitoring systems.</p>
+                <div class="research-topics">
+                    <span class="topic-tag">Medical Image Processing</span>
+                    <span class="topic-tag">Smart Healthcare</span>
+                    <span class="topic-tag">Diagnostic AI</span>
+                    <span class="topic-tag">Health Monitoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Research Affiliations</h2>
+            </div>
+            <div class="research-grid">
+                <div class="card text-center">
+                    <h4>Voice AI Research Institute</h4>
+                    <p>Inha University, South Korea</p>
+                    <p class="text-light">Current Position</p>
+                </div>
+                <div class="card text-center">
+                    <h4>SpaceTop Research Center</h4>
+                    <p>KAIST, South Korea</p>
+                    <p class="text-light">Former Postdoc (ITRC)</p>
+                </div>
+                <div class="card text-center">
+                    <h4>XVoice AI Laboratory</h4>
+                    <p>Inha University, South Korea</p>
+                    <p class="text-light">Research Collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Mukhiddin Toshpulatov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

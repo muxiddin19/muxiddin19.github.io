@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae of Dr. Mukhiddin Toshpulatov - Education, Experience, Publications, and Skills">
+    <title>CV | Dr. Mukhiddin Toshpulatov</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .cv-section {
+            margin-bottom: 3rem;
+        }
+        .cv-section h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .cv-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--bg-tertiary);
+        }
+        .cv-item:hover {
+            border-left-color: var(--accent-color);
+        }
+        .cv-item .date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .cv-item h4 {
+            margin: 0.25rem 0;
+            color: var(--primary-color);
+        }
+        .cv-item .org {
+            color: var(--text-light);
+            font-style: italic;
+        }
+        .cv-item .desc {
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .download-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+        @media print {
+            .download-btn, header, footer {
+                display: none;
+            }
+            .cv-section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Dr. <span>Muhiddin</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 3rem 0;">
+        <div class="container text-center">
+            <h1 style="color: white;">Curriculum Vitae</h1>
+            <p style="opacity: 0.9;">Dr. Mukhiddin Toshpulatov</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Contact Info -->
+            <div class="cv-section">
+                <h3><i class="fas fa-user"></i> Personal Information</h3>
+                <div class="card">
+                    <p><strong>Name:</strong> Dr. Mukhiddin Toshpulatov</p>
+                    <p><strong>Position:</strong> Senior Researcher</p>
+                    <p><strong>Institution:</strong> Voice AI Research Institute, Inha University</p>
+                    <p><strong>Email:</strong> muhiddin@inha.ac.kr</p>
+                    <p><strong>Location:</strong> Incheon, South Korea</p>
+                </div>
+            </div>
+
+            <!-- Research Interests -->
+            <div class="cv-section">
+                <h3><i class="fas fa-lightbulb"></i> Research Interests</h3>
+                <div class="card">
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Artificial Intelligence:</strong> Deep Learning, Machine Learning, Natural Language Processing</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Human-Computer Interaction:</strong> Hand & Fingertips Detection, Tracking, AR/VR/XR</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Computer Vision:</strong> Autoencoder, CNN, GAN, Diffusion Models, Vision Transformers</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Transformer Applications:</strong> Language Processing, Pose Estimation, Action Recognition</li>
+                        <li><i class="fas fa-check" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Medical AI:</strong> Medical Image Processing, Smart Healthcare</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="cv-section">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="cv-item">
+                    <span class="date">2019 - 2025</span>
+                    <h4>Ph.D. in Smart Engineering</h4>
+                    <p class="org">Biomedical Science & Engineering, Inha University, South Korea</p>
+                    <p class="desc">Thesis: Advancing Sign Language Recognition: A Multimodal Deep Learning Framework with Keypoint Vectorization</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2000 - 2002</span>
+                    <h4>M.Sc. in Mathematics and Computer Science</h4>
+                    <p class="org">Samarkand State University, Uzbekistan</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">1996 - 2000</span>
+                    <h4>B.Sc. in Mathematics and Mechanics</h4>
+                    <p class="org">Samarkand State University, Uzbekistan</p>
+                </div>
+            </div>
+
+            <!-- Research Experience -->
+            <div class="cv-section">
+                <h3><i class="fas fa-flask"></i> Research Experience</h3>
+                <div class="cv-item">
+                    <span class="date">Oct 2025 - Present</span>
+                    <h4>Senior Researcher</h4>
+                    <p class="org">Voice AI Research Institute, Inha University</p>
+                    <p class="desc">Multimodal sign language recognition, Vision Transformers, Diffusion models, LLM.</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">Mar 2025 - Oct 2025</span>
+                    <h4>Postdoctoral Researcher</h4>
+                    <p class="org">KAIST, SpaceTop Research Center (ITRC)</p>
+                    <p class="desc">VR keyboard project focused on accurately detecting and tracking fingertips.</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2019 - 2025</span>
+                    <h4>Research Assistant</h4>
+                    <p class="org">Inha University</p>
+                    <p class="desc">Supported AI and medical AI courses and guided student research.</p>
+                </div>
+            </div>
+
+            <!-- Teaching Experience -->
+            <div class="cv-section">
+                <h3><i class="fas fa-chalkboard-teacher"></i> Teaching Experience</h3>
+                <div class="cv-item">
+                    <span class="date">2025 - Present</span>
+                    <h4>Lecturer</h4>
+                    <p class="org">National University of Uzbekistan, Djizakh Branch</p>
+                    <p class="desc">Courses: Deep Learning in Computer Vision</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2022 - 2024</span>
+                    <h4>Lecturer</h4>
+                    <p class="org">Karshi Irrigation and Agrotechnology Institute</p>
+                    <p class="desc">Courses: Deep Learning, Mathematical Modeling</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2013 - 2018</span>
+                    <h4>Lecturer</h4>
+                    <p class="org">Tashkent University of Information Technology</p>
+                    <p class="desc">Courses: Machine Learning, Numerical Analysis, Mathematical Modeling</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2010 - 2013</span>
+                    <h4>Lecturer</h4>
+                    <p class="org">Jizzakh Polytechnical Institute</p>
+                    <p class="desc">Courses: Numerical Analysis, Mathematical Modeling</p>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="cv-section">
+                <h3><i class="fas fa-trophy"></i> Honors & Awards</h3>
+                <div class="cv-item">
+                    <span class="date">2025</span>
+                    <h4>Outstanding Researcher, Best Researcher</h4>
+                    <p class="org">Inha University</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2024</span>
+                    <h4>Best Paper Awards</h4>
+                    <p class="org">BigDAS and Korean Computer Congress</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2020 - 2023</span>
+                    <h4>Excellent Paper Awards</h4>
+                    <p class="org">BK21, BMSE Research Fair, Inha University</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2018</span>
+                    <h4>Scientific Title "Docent"</h4>
+                    <p class="org">Supreme Attestation Commission of Uzbekistan</p>
+                    <p class="desc">Equivalent to Associate Professor in post-Soviet countries</p>
+                </div>
+                <div class="cv-item">
+                    <span class="date">2016</span>
+                    <h4>Best Researcher-Professor Award</h4>
+                    <p class="org">Ministry of Higher Education, Science and Innovation, Uzbekistan</p>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="cv-section">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="card">
+                    <p><strong>Programming:</strong> Python, MATLAB</p>
+                    <p><strong>Deep Learning:</strong> PyTorch, TensorFlow, Keras</p>
+                    <p><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn</p>
+                    <p><strong>Computer Vision:</strong> OpenCV, MediaPipe</p>
+                    <p><strong>Specializations:</strong> CNN, Vision Transformers, GANs, Diffusion Models</p>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="cv-section">
+                <h3><i class="fas fa-language"></i> Languages</h3>
+                <div class="card">
+                    <p><strong>Uzbek:</strong> Native</p>
+                    <p><strong>Russian:</strong> Fluent</p>
+                    <p><strong>English:</strong> Fluent</p>
+                    <p><strong>Korean:</strong> Intermediate</p>
+                </div>
+            </div>
+
+            <!-- References -->
+            <div class="cv-section">
+                <h3><i class="fas fa-users"></i> References</h3>
+                <div class="research-grid" style="grid-template-columns: 1fr;">
+                    <div class="card">
+                        <h4>Prof. Wookey Lee</h4>
+                        <p>Professor, Inha University</p>
+                        <p><i class="fas fa-envelope"></i> trinity@inha.ac.kr</p>
+                        <p><em>PhD Supervisor</em></p>
+                    </div>
+                    <div class="card">
+                        <h4>Prof. Suan Lee</h4>
+                        <p>Assistant Professor, Semyung University</p>
+                        <p><i class="fas fa-envelope"></i> suanlee@semyung.ac.kr</p>
+                        <p><em>PhD Thesis Co-advisor</em></p>
+                    </div>
+                    <div class="card">
+                        <h4>Prof. Geehyuk Lee</h4>
+                        <p>Professor, KAIST</p>
+                        <p><i class="fas fa-envelope"></i> geehyuk@kaist.ac.kr</p>
+                        <p><em>Director, KAIST SpaceTop Research Center</em></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="download-btn" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="../assets/CV_Mukhiddin_Toshpulatov.pdf" download class="btn btn-primary">
+            <i class="fas fa-file-pdf"></i> Download PDF
+        </a>
+        <a href="#" class="btn btn-primary" onclick="window.print(); return false;" style="background: var(--secondary-color);">
+            <i class="fas fa-print"></i> Print
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Mukhiddin Toshpulatov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

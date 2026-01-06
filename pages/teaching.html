@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teaching Experience by Dr. Mukhiddin Toshpulatov - Courses in Deep Learning, Machine Learning, and Computer Vision">
+    <title>Teaching | Dr. Mukhiddin Toshpulatov</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        .teaching-card {
+            background: var(--bg-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--accent-color);
+        }
+        .teaching-card .institution {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .teaching-card .inst-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+        .teaching-card .inst-info h3 {
+            margin-bottom: 0.25rem;
+        }
+        .teaching-card .period {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .course-list {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+        .course-list li {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        .course-tag {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+        .mentoring-section {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Dr. <span>Muhiddin</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html" class="active">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 3rem 0;">
+        <div class="container text-center">
+            <h1 style="color: white;">Teaching</h1>
+            <p style="opacity: 0.9;">Courses, Mentoring, and Educational Activities</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Teaching Philosophy</h2>
+            </div>
+            <div class="card" style="max-width: 900px; margin: 0 auto 3rem;">
+                <p>I believe in fostering a learning environment that combines theoretical foundations with practical applications. My teaching approach emphasizes hands-on experience with cutting-edge AI technologies, encouraging students to explore, experiment, and develop innovative solutions to real-world problems.</p>
+                <p>With over 15 years of teaching experience across multiple institutions, I have taught courses ranging from fundamental mathematics to advanced deep learning and computer vision.</p>
+            </div>
+
+            <div class="section-title">
+                <h2>Teaching Experience</h2>
+            </div>
+
+            <!-- Current Position -->
+            <div class="teaching-card">
+                <div class="institution">
+                    <div class="inst-icon"><i class="fas fa-university"></i></div>
+                    <div class="inst-info">
+                        <h3>National University of Uzbekistan, Djizakh Branch</h3>
+                        <p class="period"><i class="fas fa-calendar"></i> 2025 - Present</p>
+                    </div>
+                </div>
+                <p>Teaching advanced courses in computer vision and deep learning to graduate students.</p>
+                <ul class="course-list">
+                    <li><strong>Deep Learning in Computer Vision</strong> <span class="course-tag">Graduate</span></li>
+                </ul>
+            </div>
+
+            <!-- Karshi -->
+            <div class="teaching-card">
+                <div class="institution">
+                    <div class="inst-icon"><i class="fas fa-university"></i></div>
+                    <div class="inst-info">
+                        <h3>Karshi Irrigation and Agrotechnology Institute</h3>
+                        <p class="period"><i class="fas fa-calendar"></i> 2022 - 2024</p>
+                    </div>
+                </div>
+                <p>Delivered courses on deep learning fundamentals and mathematical modeling for engineering applications.</p>
+                <ul class="course-list">
+                    <li><strong>Deep Learning</strong> <span class="course-tag">Undergraduate</span></li>
+                    <li><strong>Mathematical Modeling</strong> <span class="course-tag">Undergraduate</span></li>
+                </ul>
+            </div>
+
+            <!-- TUIT -->
+            <div class="teaching-card">
+                <div class="institution">
+                    <div class="inst-icon"><i class="fas fa-university"></i></div>
+                    <div class="inst-info">
+                        <h3>Tashkent University of Information Technology</h3>
+                        <p class="period"><i class="fas fa-calendar"></i> 2013 - 2018</p>
+                    </div>
+                </div>
+                <p>Taught courses covering machine learning algorithms, numerical methods, and computational modeling.</p>
+                <ul class="course-list">
+                    <li><strong>Machine Learning</strong> <span class="course-tag">Graduate</span></li>
+                    <li><strong>Numerical Analysis</strong> <span class="course-tag">Undergraduate</span></li>
+                    <li><strong>Mathematical Modeling</strong> <span class="course-tag">Undergraduate</span></li>
+                </ul>
+            </div>
+
+            <!-- Jizzakh -->
+            <div class="teaching-card">
+                <div class="institution">
+                    <div class="inst-icon"><i class="fas fa-university"></i></div>
+                    <div class="inst-info">
+                        <h3>Jizzakh Polytechnical Institute</h3>
+                        <p class="period"><i class="fas fa-calendar"></i> 2010 - 2013</p>
+                    </div>
+                </div>
+                <p>Introduced students to computational mathematics and modeling techniques.</p>
+                <ul class="course-list">
+                    <li><strong>Numerical Analysis</strong> <span class="course-tag">Undergraduate</span></li>
+                    <li><strong>Mathematical Modeling</strong> <span class="course-tag">Undergraduate</span></li>
+                </ul>
+            </div>
+
+            <!-- Research Assistant -->
+            <div class="teaching-card">
+                <div class="institution">
+                    <div class="inst-icon"><i class="fas fa-flask"></i></div>
+                    <div class="inst-info">
+                        <h3>Inha University - Research Assistant</h3>
+                        <p class="period"><i class="fas fa-calendar"></i> 2019 - 2025</p>
+                    </div>
+                </div>
+                <p>Supported AI and medical AI courses while guiding student research projects.</p>
+                <div class="mentoring-section">
+                    <h4><i class="fas fa-users"></i> Mentoring Activities</h4>
+                    <ul class="course-list">
+                        <li>Guided undergraduate and graduate research projects</li>
+                        <li>Supervised student thesis work in AI and computer vision</li>
+                        <li>Led lab sessions for AI and Medical AI courses</li>
+                        <li>Mentored students in deep learning implementations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Overview -->
+    <section style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Courses Taught</h2>
+            </div>
+            <div class="research-grid">
+                <div class="card">
+                    <h4><i class="fas fa-brain" style="color: var(--accent-color);"></i> Deep Learning</h4>
+                    <p>Neural networks, CNNs, RNNs, Transformers, and practical applications in computer vision and NLP.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-eye" style="color: var(--accent-color);"></i> Computer Vision</h4>
+                    <p>Image processing, object detection, segmentation, and deep learning approaches for visual understanding.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-robot" style="color: var(--accent-color);"></i> Machine Learning</h4>
+                    <p>Supervised and unsupervised learning, model evaluation, feature engineering, and practical implementations.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-calculator" style="color: var(--accent-color);"></i> Numerical Analysis</h4>
+                    <p>Numerical methods for solving equations, interpolation, integration, and differential equations.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-project-diagram" style="color: var(--accent-color);"></i> Mathematical Modeling</h4>
+                    <p>Formulation and analysis of mathematical models for engineering and scientific applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. Mukhiddin Toshpulatov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
