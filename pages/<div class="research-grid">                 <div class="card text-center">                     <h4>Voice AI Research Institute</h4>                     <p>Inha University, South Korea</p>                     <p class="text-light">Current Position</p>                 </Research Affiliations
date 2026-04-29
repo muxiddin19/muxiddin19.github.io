@@ -342,14 +342,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Research Affiliations</h2>
-            </div>
-            <div class="research-grid">
-                <div class="card text-center">
-                    <h4>Intelligent Network & Embedded Systems Lab, Computer Engineering Department</h4>
-                    <p>Gachon University, South Korea</p>
-                    <p class="text-light">Current Position</p>
-                </div>
- </div>
+
                 <div class="research-grid">
                 <div class="card text-center">
                     <h4>Voice AI Research Institute</h4>
