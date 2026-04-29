@@ -13,6 +13,71 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 
     <style>
+        .affiliations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.affiliation-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--accent-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.affiliation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.affiliation-card .affil-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.affiliation-card h4 {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.affiliation-card .university {
+    color: var(--text-light, #666);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.affiliation-card .role-badge {
+    display: inline-block;
+    background: var(--bg-tertiary, #f0f4ff);
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .affiliations-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+    .affiliations-grid { grid-template-columns: 1fr; }
+}
         .research-detail {
             background: var(--bg-color);
             border-radius: 12px;
@@ -337,37 +402,45 @@
         </div>
     </section>
 
-    <!-- Collaborations -->
-<section style="background: var(--bg-secondary);">
+<!-- Collaborations -->
+<section style="background: var(--bg-secondary); padding: 4rem 0;">
     <div class="container">
         <div class="section-title">
             <h2>Research Affiliations</h2>
         </div>
-        <div class="research-grid">
-            <div class="card text-center">
-                <h4>Intelligent Network Embedded Systems Lab, Computer Engineering Department</h4>
-                <p>Gachon University, South Korea</p>
-                <p class="text-light">Current Assistant Professor, Researcher</p>
+        <div class="affiliations-grid">
+
+            <div class="affiliation-card">
+                <div class="affil-icon"><i class="fas fa-university"></i></div>
+                <h4>Intelligent Network &amp; Embedded Systems Lab</h4>
+                <p class="university">Gachon University, South Korea</p>
+                <span class="role-badge">Current Position</span>
             </div>
-            <div class="card text-center">
+
+            <div class="affiliation-card">
+                <div class="affil-icon"><i class="fas fa-microphone"></i></div>
                 <h4>Voice AI Research Institute</h4>
-                <p>Inha University, South Korea</p>
-                <p class="text-light">Former Senior Researcher</p>
+                <p class="university">Inha University, South Korea</p>
+                <span class="role-badge">Former Senior Researcher</span>
             </div>
-            <div class="card text-center">
+
+            <div class="affiliation-card">
+                <div class="affil-icon"><i class="fas fa-vr-cardboard"></i></div>
                 <h4>SpaceTop Research Center</h4>
-                <p>KAIST, South Korea</p>
-                <p class="text-light">Former Postdoc (ITRC)</p>
+                <p class="university">KAIST, South Korea</p>
+                <span class="role-badge">Former Postdoc (ITRC)</span>
             </div>
-            <div class="card text-center">
+
+            <div class="affiliation-card">
+                <div class="affil-icon"><i class="fas fa-flask"></i></div>
                 <h4>XVoice AI Laboratory</h4>
-                <p>Inha University, South Korea</p>
-                <p class="text-light">Research Collaboration</p>
+                <p class="university">Inha University, South Korea</p>
+                <span class="role-badge">Research Collaboration</span>
             </div>
+
         </div>
     </div>
 </section>
-
     <footer>
         <div class="container">
             <div class="footer-bottom">
