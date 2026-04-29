@@ -345,9 +345,15 @@
             </div>
             <div class="research-grid">
                 <div class="card text-center">
+                    <h4>Intelligent Network & Embedded Systems Lab, Computer Engineering Department</h4>
+                    <p>Gachon University, South Korea</p>
+                    <p class="text-light">Current Position</p>
+                </div>
+                <div class="research-grid">
+                <div class="card text-center">
                     <h4>Voice AI Research Institute</h4>
                     <p>Inha University, South Korea</p>
-                    <p class="text-light">Current Position</p>
+                    <p class="text-light">Former Senior Researcher</p>
                 </div>
                 <div class="card text-center">
                     <h4>SpaceTop Research Center</h4>
