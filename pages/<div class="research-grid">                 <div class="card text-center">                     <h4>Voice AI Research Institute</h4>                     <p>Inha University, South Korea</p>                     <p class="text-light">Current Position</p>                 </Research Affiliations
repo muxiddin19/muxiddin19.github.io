@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Research by Dr. Mukhiddin Toshpulatov - Sign Language Recognition, Human Activity Recognition, Generative AI">
+    <meta name="description" content=" Research by Dr. Mukhiddin Toshpulatov - Sign Language Recognition, Human Activity Recognition, Generative AI">
     <title>Research | Dr. Mukhiddin Toshpulatov</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -342,7 +342,6 @@
         <div class="container">
             <div class="section-title">
                 <h2>Research Affiliations</h2>
-
                 <div class="research-grid">
                 <div class="card text-center">
                     <h4>Voice AI Research Institute</h4>
