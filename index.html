@@ -567,6 +567,58 @@ In addition to my research activities, I have extensive teaching experience at u
 <script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
 
 <script type="text/babel">
+    const publications = [
+  { year: 2026, title: "Sentimentogram: Learning Personalized Emotion Visualizations from User Preferences",
+    authors: "Toshpulatov, M., Lee, W., Lee, S., Kuvandikov, J., & Oh, S.",
+    venue: "Findings of ACL 2026" },
+  { year: 2026, title: "Real-Time Multimodal Fingertip Contact Detection via Depth and Motion Fusion",
+    authors: "Toshpulatov, M., Lee, W., Lee, S., & Lee, G.",
+    venue: "Proceedings of CVPR 2026",
+    link: "https://openaccess.thecvf.com/content/CVPR2026/papers/Toshpulatov_Real-Time_Multimodal_Fingertip_Contact_Detection_via_Depth_and_Motion_Fusion_CVPR_2026_paper.pdf" },
+  { year: 2025, title: "Deep Learning Pathways for Automatic Sign Language Processing",
+    authors: "Toshpulatov, M., Lee, W., & Lee, S.",
+    venue: "Pattern Recognition, 164, 111475", badge: "IF: 9.84" },
+  // ...add the rest the same way
+];
+
+function PublicationItem({ year, title, authors, venue, badge, link }) {
+  return (
+    <div className="publication-item">
+      <span className="publication-year">{year}</span>
+      <h4 className="publication-title">
+        {link ? <a href={link} target="_blank" rel="noopener">{title}</a> : title}
+      </h4>
+      <p className="publication-authors">{authors}</p>
+      <p className="publication-venue">
+        {venue} {badge && <span className="publication-badge">{badge}</span>}
+      </p>
+    </div>
+  );
+}
+
+function Publications() {
+  const [filter, setFilter] = useState("All");
+  const years = ["All", ...new Set(publications.map(p => p.year))];
+  const shown = filter === "All" ? publications : publications.filter(p => p.year === filter);
+
+  return (
+    <>
+      <div className="pub-filters">
+        {years.map(y => (
+          <button key={y} type="button"
+                  className={"pub-filter" + (y === filter ? " active" : "")}
+                  onClick={() => setFilter(y)}>
+            {y}
+          </button>
+        ))}
+      </div>
+      {shown.map(p => <PublicationItem key={p.title} {...p} />)}
+      <p className="pub-count">Showing {shown.length} of {publications.length}</p>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('react-pubs')).render(<Publications />);
   function StatItem({ number, label }) {
   return (
     <div className="stat-item">
