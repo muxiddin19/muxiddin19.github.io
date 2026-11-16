@@ -573,18 +573,29 @@ In addition to my research activities, I have extensive teaching experience at u
   );
 }
 
-const stats = [
-  { number: "193+", label: "Citations" },
-  { number: "7",    label: "h-index" },
-  { number: "6+",   label: "Journal Papers" },
-  { number: "55+",  label: "GitHub Projects" },
-];
+const { useState, useEffect } = React;
 
-function Stats() {
-  return <>{stats.map(s => <StatItem key={s.label} {...s} />)}</>;
+function GitHubStat() {
+  const [count, setCount] = useState("55+");   // shown until the fetch finishes
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/muxiddin19")
+      .then(res => res.ok ? res.json() : Promise.reject(res.status))
+      .then(data => setCount(data.public_repos))
+      .catch(() => {});                           // on error, keep "55+"
+  }, []);                                         // [] = run once, when the page loads
+
+  return <StatItem number={count} label="GitHub Repos" />;
 }
 
-ReactDOM.createRoot(document.getElementById('react-stats')).render(<Stats />);
+function Stats() {
+  return (
+    <>
+      {stats.slice(0, 3).map(s => <StatItem key={s.label} {...s} />)}
+      <GitHubStat />
+    </>
+  );
+}
 </script>
 </body>
 </html>
