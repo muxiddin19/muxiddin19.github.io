@@ -115,6 +115,7 @@ I have held research appointments across several leading institutions. I am curr
 <p>
 In addition to my research activities, I have extensive teaching experience at universities in Korea and Uzbekistan, delivering undergraduate and graduate courses in deep learning, computer vision, cybersecurity, machine learning, numerical analysis, and mathematical modeling. My current research continues to explore multimodal perception, AI‑driven human–computer interaction, and generative models, with broader interests in deploying robust, interpretable, and human‑centered AI systems in real‑world environments.
 </p>
+                <div id="react-hello"></div>
 ``
             </div>
         </div>
@@ -555,5 +556,17 @@ In addition to my research activities, I have extensive teaching experience at u
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
+    <!-- React (no build step) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.26.4/babel.min.js"></script>
+
+<script type="text/babel">
+  function Hello() {
+    return <p><strong>This line is rendered by React.</strong></p>;
+  }
+
+  ReactDOM.createRoot(document.getElementById('react-hello')).render(<Hello />);
+</script>
 </body>
 </html>
