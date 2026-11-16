@@ -679,3 +679,9 @@ footer {
     color: var(--primary-color);
   }
 }
+
+.pub-filters { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.pub-filter { padding: .35rem .9rem; border: 1px solid var(--primary-color); border-radius: 999px;
+              background: transparent; color: var(--primary-color); cursor: pointer; font: inherit; }
+.pub-filter.active, .pub-filter:hover { background: var(--primary-color); color: #fff; }
+.pub-count { font-size: .85rem; opacity: .7; margin-top: .5rem; }
